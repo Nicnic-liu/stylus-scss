@@ -1,0 +1,64 @@
+{
+  "name": "stylus-converter",
+  "version": "0.8.1",
+  "description": "A tool that converts a stylus into sass, or less, or other precompiled CSS.",
+  "main": "lib/index.js",
+  "bin": {
+    "stylus-conver": "bin/conver.js"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c && node ./test/converter-test.js",
+    "test": "npm run build && mocha ./test/index.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/txs1992/stylus-converter.git"
+  },
+  "keywords": [
+    "stylus",
+    "stylus-converter",
+    "stylus-to",
+    "stylus2",
+    "stylusto",
+    "stylsu2scss",
+    "stylus2sass",
+    "stylus2less",
+    "stylusToScss",
+    "stylusToSass",
+    "stylusToLess",
+    "stylustoscss",
+    "stylustosass",
+    "stylustoless",
+    "stylus-to-scss",
+    "stylus-to-sass",
+    "stylus-to-lcss"
+  ],
+  "author": "MT",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/txs1992/stylus-converter/issues"
+  },
+  "homepage": "https://github.com/txs1992/stylus-converter#readme",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015-rollup": "^3.0.0",
+    "chai": "^4.1.2",
+    "mocha": "^5.1.1",
+    "rollup": "^0.57.1",
+    "rollup-plugin-babel": "^3.0.3"
+  },
+  "dependencies": {
+    "commander": "^2.15.1",
+    "invariant": "^2.2.4",
+    "lodash.debounce": "^4.0.8",
+    "lodash.uniq": "^4.5.0",
+    "ms": "^2.1.1",
+    "optimist": "^0.6.1",
+    "ora": "^2.1.0",
+    "stylus": "^0.54.5"
+  }
+}
